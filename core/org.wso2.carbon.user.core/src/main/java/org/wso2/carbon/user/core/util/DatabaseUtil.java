@@ -248,7 +248,7 @@ public class DatabaseUtil {
         ResultSet rs = null;
         try {
             prepStmt = dbConnection.prepareStatement(sqlStmt);
-            if (params != null && params.length > 0) {
+            if (params != null) {
                 for (int i = 0; i < params.length; i++) {
                     Object param = params[i];
                     if (param == null) {
